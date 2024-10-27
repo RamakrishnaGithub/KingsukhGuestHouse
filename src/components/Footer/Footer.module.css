@@ -1,0 +1,143 @@
+/* Footer.module.css */
+
+.Footer-Container {
+    background-color: #010101;
+    color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Headings */
+  .Footer-Container h4 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Text */
+  .Footer-Container p {
+    font-size: 0.9rem;
+    color: #696666;
+    line-height: 1.6;
+    margin: 10px 0;
+  }
+  
+  /* Links */
+  .Footer-Container a {
+    color: #696666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .Footer-Container a:hover {
+    color: #ffffff;
+  }
+  
+  /* Social Media Icons */
+  .Footer-Container img {
+    width: 25px;
+    margin: 0 8px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .Footer-Container img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  
+  /* Flexbox for Rows */
+  .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  /* Columns */
+  .col-md-3 {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Footer Bottom Text */
+  .Footer-Container > div:last-child {
+    font-size: 0.85rem;
+    color: #bbbbbb;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #555;
+  }
+  
+  /* Fade-in Animation */
+  .Footer-Container h4,
+  .Footer-Container p,
+  .Footer-Container a,
+  .Footer-Container img {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  .Footer-Container p:nth-child(even),
+  .Footer-Container h4:nth-child(even),
+  .Footer-Container a:nth-child(even),
+  .Footer-Container img:nth-child(even) {
+    animation-delay: 0.3s;
+  }
+  
+  .Footer-Container p:nth-child(odd),
+  .Footer-Container h4:nth-child(odd),
+  .Footer-Container a:nth-child(odd),
+  .Footer-Container img:nth-child(odd) {
+    animation-delay: 0.5s;
+  }
+
+/* Book Now button */
+.book-now-btn {
+    margin-top: 30px;
+     color: white;
+     border-color:  #E82574;
+     background-color:   #E82574;
+     font-weight: 500;
+     transition: background-color 0.3s ease, color 0.3s ease;
+   }
+   
+   .book-now-btn:hover {
+     background-color:   #94073f;
+     color: #fff;
+   }
+
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(15px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Responsive Adjustments */
+  @media (min-width: 768px) {
+    .col-md-3 {
+      width: 45%;
+      max-width: 220px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .col-md-3 {
+      width: 22%;
+      max-width: 250px;
+      text-align: left;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .Footer-Container {
+      padding: 40px 15px;
+    }
+  }
+  
